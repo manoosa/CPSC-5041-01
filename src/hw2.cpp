@@ -1,13 +1,14 @@
-// AUTHOR: Sample Solution HW2-5041
+// AUTHOR: Marwa Saleh
+// ASSIGMENT: Homework 2 Part II
 // DATE: Winter 5041 2021
 // PURPOSE: This program is used to test the custom designed
-//          division method for converting decimal numbers to binary.
+//          method for converting decimal numbers to binary.
 // INPUT:   Prompts from user.
-// PROCESS: There are one tests, to verify divison by base.
+// PROCESS: There are tests, to verify converting decimal to binary
 //          After the tests, a client program runs, prompting the user
-//          for values that will be used to divide by the
+//          for values that will be used to convert to binary by the
 //          number entered.
-// OUTPUT:  Prints results of tests and division of value by number entered by user
+// OUTPUT:  Prints results of tests and binary values converted by number entered by user
 #include <iostream>
 #include <string>
 using namespace std;
@@ -18,19 +19,19 @@ using namespace std;
 void runProgram();
 
 // Function:    validate and convert decimal to binary
-// Purpose:     validate the num and then Divide num by the base 2.
+// Purpose:     validate the input and then convert input to the base 2.
 // Parameters:  The input value input
 // Returns:     None
 void validateAndConvertDecToBinary(double input);
 
 // Function:    convert decimal to binary
-// Purpose:     Divide num by the base 2.
+// Purpose:     divide num to the base 2.
 // Parameters:  The number num
 // Returns:     None
 void decimalToBinary(int num);
 
 // Function:    testConvertDecimalToBinary
-// Purpose:     Tests the function decimalToBinary
+// Purpose:     tests the function decimalToBinary
 // Parameters:  None
 // Returns:     None
 void testConvertDecimalToBinary();
