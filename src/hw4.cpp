@@ -28,7 +28,7 @@ void calculateAvg(int, int);
 // Returns:     None
 void displayList(int*, string*, int);
 
-// Function:    sort scores in an ascending order
+// Function:    sort scores in an ascending order using quick sort
 // Purpose:     sort scores with student names in an ascending order
 // Parameters:  scores array, student names array, start index, end index
 // Returns:     None
@@ -47,7 +47,8 @@ void swapScores(int*, int, int);
 void swapStudentNames(string*, int, int);
 
 int main() {
-	int numScores;
+	std::cout << "\n---- HOMEWORK 4 ----" << std::endl;
+	int numScores; //For storing number of Scores
 	int total = 0;
 	cout << "How many test scores will you enter? ";
 	cin >> numScores;
@@ -69,7 +70,7 @@ int main() {
 		}
 	}
 
-	//sort the elements of the array pointers
+	//Sort the elements of the array pointers
 	sortArray(scores, studentNames, numScores);
 	displayList(scores, studentNames, numScores);
 
@@ -114,13 +115,13 @@ void sort(int *scores, string *names, int low, int high) {
 	}
 }
 
-void swap(int *arr, int i, int j) {
+void swapScores(int *arr, int i, int j) {
 	int temp = arr[j];
 	arr[j] = arr[i];
 	arr[i] = temp;
 }
 
-void swapString(string *arr, int i, int j) {
+void swapStudentNames(string *arr, int i, int j) {
 	string temp = arr[j];
 	arr[j] = arr[i];
 	arr[i] = temp;
