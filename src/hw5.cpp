@@ -366,14 +366,14 @@ list<Process*> readFile(string inputFile, Calculations *cal) {
 }
 
 int main(int argc, char *argv[]) {
-	if (argc != 4) {
+	if (argc != 3) {
 		cout << "Invalid input" << endl;
 		return 0;
 	}
 
 	Calculations *cal = new Calculations();
-	string inputFile = argv[2];
-	string schedulingAlgorithm = argv[3];
+	string inputFile = argv[1];
+	string schedulingAlgorithm = argv[2];
 
 	list<Process*> listofProcesses = readFile(inputFile, cal);
 	if (listofProcesses.empty()) {
